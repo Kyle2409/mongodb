@@ -1,4 +1,4 @@
-require("dotenv").config();
+// require("dotenv").config();
 
 const express = require("express");
 const app = express();
@@ -15,4 +15,4 @@ const subscribersRouter = require("./routes/subscribers");
 app.use("/subscribers", subscribersRouter)
 
 
-app.listen(3000, () => console.log("Server Started"));
+app.listen(process.env.PORT||3000, () => console.log("Server Started"));
