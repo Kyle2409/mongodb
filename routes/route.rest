@@ -1,0 +1,24 @@
+GET http://localhost:3000/users
+
+###
+
+GET http://localhost:3000/users/6213822a8e9e1d750afcd75e
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "nice",
+    "userJoined": "Web Dev Simplified"
+}
+###
+DELETE http://localhost:3000/users/621385307a997ddc7b0ce228
+###
+PATCH http://localhost:3000/users/621375a81237eebcc160571a
+Content-Type: application/json
+
+{
+    "name":"amazing girl"
+}
